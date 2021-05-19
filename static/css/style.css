@@ -1,0 +1,71 @@
+@import url(./fonts.css);
+
+body,html {
+  height: 100%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* .banner {
+  padding-top: 65px;
+} */
+
+.headshot {
+	border-radius: 50%;
+  width: 100%;
+	height: auto;
+	max-width: 400px;
+}
+
+.test-uppercase {
+  text-transform: uppercase;
+}
+
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+footer {
+  font-size: small;
+}
+
+@media(max-width:767px) {
+  .text-start {
+    text-align: center;
+  }
+}
+
+.h-10{
+  height: 10%;
+}
+
+.h-90{
+  height: 90%;
+}
+
+.h3,h3{
+  font-size:20px;
+  font-weight:700
+}
+
+.pre{
+  font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+  page-break-inside:avoid;
+  color:#a9a9a9;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:70px;
+}
+
+.btn .badge{
+  position:relative;
+  top:-1px
+}
+
+.badge-sm{
+  font-size:8px;
+  vertical-align:middle;
+  margin-left:5px
+}

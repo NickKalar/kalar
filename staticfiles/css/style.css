@@ -1,0 +1,14 @@
+body,html {
+  height: 100%;
+}
+
+#headshot {
+	border-radius: 50%;
+	height: auto;
+}
+
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}

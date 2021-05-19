@@ -1,0 +1,204 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Nicholas Kalar</title>
+	<link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/gif" size="16x16">
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BootStrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#home">Nicholas Kalar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link text-uppercase" href="#about">about me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-uppercase" href="#portfolio">portfolio</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link text-uppercase" href="#contact">contact</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/NickKalar" target="_blank">
+							<img src="{% static 'images/GitHub-Mark-120px-plus.png' %}" alt="" width="24" height="24" class="d-inline-block align-text-top">
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/nkalar/" target="_blank">
+							<img src="{% static 'images/linkedin.png' %}" alt="" width="24" height="24" class="d-inline-block align-text-top">
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://twitter.com/NickKalar" target="_blank">
+							<img src="{% static 'images/twitter-icon.png' %}" alt="" width="24" height="24" class="d-inline-block align-text-top">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Nav Bar -->
+
+	<!-- Banner -->
+	<div class="container h-100 align-items-end banner">
+		<a name="home"></a>
+		<div class="row justify-content-center align-items-center h-100">
+			<div class="col-lg-4 col-md-6 align-items-end">
+				<h2 class="text-start">Hello</h2>
+				<h1 class="text-start">My name is Nick</h1>
+				<h3 class="text-start">I am a software engineer</h3>
+			</div>
+			<div class="col-lg-4 col-md-12">
+				<img src="{% static 'images/headshot.png' %}" class="mx-auto d-block headshot" alt="Headshot">
+			</div>
+		</div>
+	</div>
+	<!-- End Banner -->
+
+	<!-- About Me -->
+	<div class="container h-50">
+		<a name="about"></a>
+		<hr>
+		<h2 class="pre text-center">About Me</h2>
+		<div class="row justify-content-center text-center">
+			<div class="col-6 align-self-center">
+				<p>I graduated cum laude from California State University in Bakersfield with a 
+					B.S. in Computer Science consentrating in Information Systems. I have a 
+					passion for learning and technology. My strongest programming skills are 
+					front end focused, but I am working towards full stack development.
+				<br><br>In my spare time, I am an avid gamer and a horror film enthusiast. I
+				enjoy cycling and spending time outdoors with my dogs. I enjoy researching obscure
+				things and have a vast knowledge of almost-useless facts. Currently I am obsessed 
+				with Dungeons and Dragons and will be looking to start a campaign once the pandemic 
+				is over.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portfolio -->
+	<div class="container h-100">
+		<a name="portfolio"></a>
+		<hr>
+		<h2 class="pre text-center">Portfolio</h2>
+		<div class="row align-items-center text-center text-lg-left">
+			<div class="col-lg-6 p-lg-0">
+				<h3>Kalar.codes<span class="badge rounded-pill bg-success badge-sm">2021</span></h3>
+			</div>
+			<div class="col-lg-6 p-lg-0">
+				<p>Portfolio website made to showcase my projects and get me a job.
+				<br>Build on the Django framework.</p>
+				<button type="button" class="btn btn-outline-success">GitHub</button>
+			</div>
+		</div>
+		<hr>
+		<div class="row align-items-center text-center text-lg-left">
+			<div class="col-lg-6 p-lg-0">
+				<h3>D&D Helper<span class="badge rounded-pill bg-success badge-sm">2021</span></h3>
+			</div>
+			<div class="col-lg-6 p-lg-0">
+				<p>Android applicaiton for creating, reading, updating, and deleting character sheets.
+				<br>Also allows referencing spell details.
+				<br>Built in Kotlin.</p>
+				<a href="https://github.com/NickKalar/DnDHelper">
+					<button type="button" class="btn btn-outline-success">GitHub</button>
+				</a>
+			</div>
+		</div>
+		<hr>
+		<div class="row align-items-center text-center text-lg-left">
+			<div class="col-lg-6 p-lg-0">
+				<h3>WhatsDue<span class="badge rounded-pill bg-success badge-sm">2020</span></h3>
+			</div>
+			<div class="col-lg-6 p-lg-0">
+				<p>Web/Android application for teacher/student communication.
+				<br>Built in Kotlin and Node.js.</p>
+				<a href="https://github.com/NickKalar/WhatsDue2">
+					<button type="button" class="btn btn-outline-success">GitHub</button>
+				</a>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<!-- End Portfolio -->
+
+	<!-- Contact -->
+	<!-- <div class="container h-90">
+		<form action="send_email">
+			<a name="contact"></a>
+			<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<h2 class="pre text-center">Contact via email</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<input type="text" class="form-control" name="name" placeholder="Name">
+				</div>
+			</div>
+			
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<input type="email" class="form-control" name="email" placeholder="Email">
+				</div>
+			</div>
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<input type="text" class="form-control" name="subject" placeholder="Subject">
+				</div>
+			</div>
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<textarea class="form-control" name="emailBody" placeholder="Message"></textarea>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-6 col-md-12 align-self-center">
+					<button type="submit" class="btn btn-success">Submit Email</button>
+				</div>
+			</div>
+		</form>
+	</div> -->
+	<!-- End Contact -->
+
+	<!-- Footer -->
+	<footer class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 align-self-start">
+				&#169; Nicholas Kalar 2021
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- BootStrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+	<!-- JQuery 3.6.0 -->
+	<script type="text/javascript" src="{% static 'js/jQuery3.6.0.js' %}"></script>
+	
+	<!-- GSAP JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+	<script type="text/javascript" src="{% static 'cssanimation-gsap.js' %}"></script>
+
+	<!-- Custom JS -->
+	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+<html>
